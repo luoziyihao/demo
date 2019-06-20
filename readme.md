@@ -1,7 +1,9 @@
-# 项目目标
+# 纯前端
+
+## 项目目标
 写一个页面，展示 "hello world"
 
-# 步骤
+## 步骤
 
 - 新建一个文件夹 demo
 - 初始化git 仓库
@@ -31,4 +33,8 @@
 浏览器输入 http://dm.luoziyihao.com/hello.html
 
 展示 "hello world!"
+
+# 前端 + 后端
+
+未完待续
 
