@@ -1,0 +1,60 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+api.iml
+/target
+/LOG_HOME_IS_UNDEFINED
+/tmp
+tmp.*
+tmp_*
+*_tmp
+*.tmp
+*_tmp.*
+*.tmp.*
+rebel.xml
+
+# kdiff3 ignore
+*.orig
+
+# maven ignore
+target/
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+tmp.*
+tmp*
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+# package ignore (optional)
+# *.jar
+# *.war
+# *.zip
+# *.tar
+# *.tar.gz
+
+# vm of front
+*.vm
+
+# doc files back
+.~*
+
+# jrebel
+rebel.xml
+
