@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<body>
+
+<div class="form-inline">
+    <textarea id="param-input" style="width:500px;height:600px;"></textarea>
+    <textarea id="param-comment-input" style="width:550px;height:600px;"></textarea>
+</div>
+
+<button onclick="add()">添加数据</button>
+<button onclick="query()">查询数据</button>
+</body>
+
+<script>
+
+
+    function add() {
+        console.log("开始请求");
+        var add_req = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://baidu.com",
+            "processData": true,
+            data: {
+                "text": $("#param-input").val()
+            }
+        }
+
+        $.ajax(add_req).done(function (response) {
+            console.log(response);
+        });
+    }
+
+    function query() {
+        console.log("开始请求");
+
+        var query_req = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://baidu.com",
+            "method": "GET",
+            "processData": true,
+            data: {}
+        }
+
+        $.ajax(query_req).done(function (response) {
+
+            console.log(response);
+            $("#param-comment-input").val(response.data);
+        });
+
+    }
+
+</script>
+</html>
