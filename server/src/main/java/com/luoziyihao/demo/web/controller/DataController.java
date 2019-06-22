@@ -16,6 +16,7 @@ import java.util.List;
 @RequestMapping("/api/data")
 @RestController
 public class DataController {
+
     private List<String> dataLists = new ArrayList<>();
 
     @RequestMapping("/add")
