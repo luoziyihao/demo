@@ -27,9 +27,9 @@ public class DataController {
 
     @RequestMapping("/query")
     public ApiResult query() {
-        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
-        objectObjectHashMap.put("text", Arrays.toString(dataLists.toArray()));
-        return ApiResult.success(objectObjectHashMap);
+        HashMap<Object, Object> data = new HashMap<>();
+        data.put("text", Arrays.toString(dataLists.toArray()));
+        return ApiResult.success(data);
     }
 
 }
