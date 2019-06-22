@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>data</title>
 </head>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <body>
@@ -51,7 +51,7 @@
         $.ajax(query_req).done(function (response) {
 
             console.log(response);
-            $("#param-comment-input").val(response.data);
+            $("#param-comment-input").val(response.data.text);
         });
 
     }
