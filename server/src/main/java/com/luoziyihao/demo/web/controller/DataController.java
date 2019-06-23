@@ -21,16 +21,15 @@ public class DataController {
 
     @RequestMapping("/add")
     public ApiResult add(String text) {
-        dataLists.add(text);
+
         return ApiResult.success();
     }
 
 
     @RequestMapping("/query")
     public ApiResult query() {
-        HashMap<Object, Object> data = new HashMap<>();
-        data.put("text", Arrays.toString(dataLists.toArray()));
-        return ApiResult.success(data);
+
+        return ApiResult.success();
     }
 
 }
